@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     require("functions.php");
 	echo "<body style='background-color:#438ef7'>";
     $notice = "";
@@ -46,8 +46,6 @@
             <input name="login" type="submit" value="Logi sisse">
         </form>
         <a style="text-align:left;" href="newuser.php">Loo kasutaja</a>
-        <a > | </a>
-        <a href="newuser.php">Unustasid salasõna?</a>
         <br>
         <a><?php echo $notice; ?></a>
     </div><br>

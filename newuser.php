@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	require("functions.php");
 
 	echo "<body style='background-color:#428cf4'>";
@@ -61,7 +61,7 @@
 	<div id="main">
 		<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 		    <h1>Konto loomine</h1>
-			<input name="firstName" type="text" placeholder="Nimi" value="<?php echo $name; ?>"><br>
+			<input name="firstName" type="text" placeholder="Username" value="<?php echo $name; ?>"><br>
 			<input type="email" name="email" placeholder="E-Mail" value="<?php echo $email; ?>"><br>
 			<input type="password" name="password" type="text" placeholder="Salasõna" >
 			<br>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require("functions.php");
 //kui pole sisse loginud
 
@@ -45,9 +45,8 @@ $id =  $_SESSION["userId"];
         <input type="date" id="date">
         <br>
         <button id="addButton">LISA</button>
-        <button id="saveButton">SALVESTA</button>
         <button id="loadButton">LAE</button>
-        <div id="todos">Siia tulevad todod</div>
+        <div id="todos">Siia tulevad pildid</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="notebook.js"></script>
