@@ -1,19 +1,16 @@
-﻿<?php
+<?php
 require("functions.php");
 //kui pole sisse loginud
-
 //kontrollib kas on sisselogitud
 if(!isset($_SESSION["userId"])){
     header("Location: index.php");
     exit();
 }
-
 if(isset($_GET["logout"])){
     session_destroy();
     header("Location: index.php");
     exit();
 }
-
 $id =  $_SESSION["userId"];
 ?>
 
@@ -31,10 +28,15 @@ $id =  $_SESSION["userId"];
     <title>Pealeht</title>
 </head>
 <body>
+  <div>
+    <a href="main.php"></a>
+    
     <div class="title">
         <div id="menuButton"><span style="font-size:60px;cursor:pointer" onclick="toggleNav()">&#9776;</span></div>
-        <a>Tere,  <?php echo $_SESSION["username"]; ?></a>
+        <a>Tere,  <?php echo $_SESSION["userName"]; ?></a>
+        <a href="main.php"></a>
     </div>
+
     <br><br><br><br><br>
     <div id="mySidenav" class="sidenav">
         <h1>Menüü</h1>
@@ -45,8 +47,9 @@ $id =  $_SESSION["userId"];
         <input type="date" id="date">
         <br>
         <button id="addButton">LISA</button>
+        <button id="saveButton">SALVESTA</button>
         <button id="loadButton">LAE</button>
-        <div id="todos">Siia tulevad pildid</div>
+        <div id="todos">Siia tulevad todod</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="notebook.js"></script>
