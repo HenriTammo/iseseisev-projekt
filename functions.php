@@ -23,7 +23,7 @@ function signin($email, $password){
 			//liigume kohe vaid sisselogitudele mõeldud pealehele
 			$stmt->close();
 			$mysqli->close();
-			header("Location: index.php");
+			header("Location: main.php");
 			exit();
 		  } else {
 		    $notice = "Vale salasõna";

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     require("functions.php");
 	echo "<body style='background-color:#438ef7'>";
     $notice = "";
