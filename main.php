@@ -1,5 +1,6 @@
 ﻿<?php
 require("functions.php");
+echo "<body style='background-color:#202020'>";
 //kui pole sisse loginud
 
 //kontrollib kas on sisselogitud

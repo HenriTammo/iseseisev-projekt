@@ -1,6 +1,6 @@
 ﻿<?php
     require("functions.php");
-	echo "<body style='background-color:#438ef7'>";
+	echo "<body style='background-color:#202020'>";
     $notice = "";
     $email = "";
     $emailError = "";
@@ -33,7 +33,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>TODO Märkmik</title>
+    <title>Ginsta</title>
 </head>
 <body>
     <div id="main">
@@ -43,7 +43,8 @@
 
             <input name="password" type="password" placeholder="Salasõna"><br>
 
-            <input name="login" type="submit" value="Logi sisse">
+            <input name="login" type="submit" value="Logi sisse" href="main.php">
+
         </form>
         <a style="text-align:left;" href="newuser.php">Loo kasutaja</a>
         <br>
