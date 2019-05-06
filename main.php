@@ -1,22 +1,22 @@
-﻿<?php
+<?php
 require("functions.php");
 echo "<body style='background-color:#202020'>";
 //kui pole sisse loginud
-
 //kontrollib kas on sisselogitud
 if(!isset($_SESSION["userId"])){
     header("Location: index.php");
     exit();
 }
-
 if(isset($_GET["logout"])){
     session_destroy();
     header("Location: index.php");
     exit();
 }
-
 $id =  $_SESSION["userId"];
+
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,20 +37,23 @@ $id =  $_SESSION["userId"];
     <div class="title">
         <div id="menuButton"><span style="font-size:60px;cursor:pointer" onclick="toggleNav()">&#9776;</span></div>
         <a>Tere,  <?php echo $_SESSION["userName"]; ?></a>
+
     </div>
+
     <br><br><br><br><br>
     <div id="mySidenav" class="sidenav">
         <h1>Menüü</h1>
             <a href="?logout=1">Logi välja</a>
     </div>
-    <div class="picAndInfo">
-        <input type="text" id="task">
-        <input type="date" id="date">
-        <br>
-        <button id="addButton">LISA</button>
-        <ul id="list">
-        <li class="list-element"></li>
-        </ul>
+    <form action ="upload.php" method ="POST" enctype="multipart/form-data">
+      <input type ="file" name="file">
+      <button type ="submit" name = "submit">UPLOAD</button>
+
+    </form>
+    <ul id="list">
+    <li class="list-element"></li>
+
+    </ul>
         <image src="img/1.jpg" alt="Loki" class="active"></image>
         <image src="img/2.jpg" alt="Excalibur_Umbra"></image>
     </div>
