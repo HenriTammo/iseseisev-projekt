@@ -13,6 +13,10 @@ if(isset($_GET["logout"])){
     exit();
 }
 $id =  $_SESSION["userId"];
+$dirToRead = "img/";
+//$allFiles = scandir($dirToRead);
+$allFiles = array_slice(scandir($dirToRead), 2);
+//var_dump($allFiles);
 
 
 ?>
@@ -50,12 +54,18 @@ $id =  $_SESSION["userId"];
       <button type ="submit" name = "submit">UPLOAD</button>
 
     </form>
-    <ul id="list">
-    <li class="list-element"></li>
+    <div id="images">
+      <?php
 
-    </ul>
-        <image src="img/1.jpg" alt="Loki" class="active"></image>
-        <image src="img/2.jpg" alt="Excalibur_Umbra"></image>
+      for ($i = 0; $i < count($allFiles); $i ++){
+
+        echo '<img src="' .$dirToRead .$allFiles[$i] .'" alt="pilt"><br><br><br>';
+
+      }
+
+    ?>
     </div>
+
+
 </body>
 </html>
