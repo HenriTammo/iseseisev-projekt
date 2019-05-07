@@ -59,12 +59,12 @@ $allFiles = array_slice(scandir($dirToRead), 2);
 
       for ($i = 0; $i < count($allFiles); $i ++){
 
-        echo '<img src="' .$dirToRead .$allFiles[$i] .'" alt="pilt"><br><br><br>';
+        echo '<img src="' .$dirToRead .$allFiles[$i] .'" style="float: left; margin: 0px 15px 15px 0px; border: 3px solid white; ">';
 
       }
 
     ?>
-    </div>
+
 
 
 </body>
