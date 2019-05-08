@@ -30,10 +30,15 @@
 	if(empty($nameError) and empty($emailError) and empty($passwordError)){
 		$notice = signup($name ,$email, $_POST["password"]);
 		echo $notice;
+		echo"<script language='javascript'>
+				alert('Kasutaja loodud!');
+				window.location.href = 'index.php';
+		</script>";
 	}else{
 		$error = "Kasutaja loomisel tekkis viga!";
 	}
 	}//kui on nuppu vajutatud lõppeb ära
+
 ?>
 
 <!DOCTYPE html>

@@ -50,7 +50,14 @@ $allFiles = array_slice(scandir($dirToRead), 2);
             <a href="?logout=1">Logi välja</a>
     </div>
     <form action ="upload.php" method ="POST" enctype="multipart/form-data">
-      <input type ="file" name="file">
+      <label for="uploadButton" class="buttonLabel">Lae pildifail üles</label>
+      <style>
+        .buttonLabel {
+          cursor: pointer;
+          color: white;
+        }
+      </style>
+      <input type ="file" name="file" id="uploadButton">
       <button type ="submit" name = "submit">UPLOAD</button>
 
     </form>
