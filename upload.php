@@ -21,13 +21,22 @@ if(isset($_POST['submit'])){
         move_uploaded_file($fileTmpName, $fileDestination);
         header("Location: main.php");
       } else {
-        echo "fail on liiga suur";
+        echo"<script language='javascript'>
+    				alert('Fail on liiga suur!');
+            window.location.href = 'main.php';
+    		</script>";
       }
     } else {
-      echo "oli viga üleslaadimisel";
+      echo"<script language='javascript'>
+  				alert('Oli viga üleslaadimisel!');
+          window.location.href = 'main.php';
+  		</script>";
     }
   }else{
-    echo "Ei saa sellist tüüpi faili laadida";
+    echo"<script language='javascript'>
+				alert('Ei saa sellist tüüpi faili laadida!');
+        window.location.href = 'main.php';
+		</script>";
   }
 }
  ?>

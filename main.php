@@ -31,6 +31,7 @@ $allFiles = array_slice(scandir($dirToRead), 2);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="sidebar.js"></script>
+    <script src="mingipask.js"></script>
     <script src="main.js"></script>
     <script type="text/javascript">
         var sessId = '<?php echo $id; ?>';
@@ -50,13 +51,13 @@ $allFiles = array_slice(scandir($dirToRead), 2);
             <a href="?logout=1">Logi välja</a>
     </div>
     <form action ="upload.php" method ="POST" enctype="multipart/form-data">
-      <label for="uploadButton" class="buttonLabel">Lae pildifail üles</label>
+    <!--  <label for="uploadButton" class="buttonLabel">Lae pildifail üles</label>
       <style>
         .buttonLabel {
           cursor: pointer;
           color: white;
         }
-      </style>
+      </style>-->
       <input type ="file" name="file" id="uploadButton">
       <button type ="submit" name = "submit">UPLOAD</button>
 
