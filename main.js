@@ -6,10 +6,11 @@ $(document).ready(function(){
 
   $('img').css({'width':'20vw'});
 
-  let selectedPic = $('img.active').attr('src');
+  // on load annab suure pildi ette kohe
+  /*let selectedPic = $('img.active').attr('src');
   $('li.list-element').html('<img src="' + selectedPic + '">');
   $('ul img').css({'width': '80vw'});
-  console.log(selectedPic);
+  console.log(selectedPic);*/
 
   $('img').click(function(){
     let currentPic = $('img.active');

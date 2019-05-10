@@ -77,4 +77,18 @@ function test_input($data) {
 	$data = htmlspecialchars($data);
 	return $data;
 }
+
+/*function addPhotoData($image, $image_text, $user){
+	$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
+  $stmt = $mysqli->prepare("INSERT INTO image_upload (userid, image, image_text, user) VALUES(?, ?, ?, ?)");
+	echo $mysqli->error;
+	$stmt->bind_param("test", $_SESSION["userid"], $image, $image_text, $_SESSION["username"]);
+	if($stmt->execute()){
+	  echo "Andmebaasiga on kõik korras";
+	} else {
+	  echo "Andmebaasiga on jama" .$stmt->error;
+	}
+	$stmt->close();
+	$mysqli->close();
+}*/
 ?>

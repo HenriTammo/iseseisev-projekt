@@ -31,7 +31,6 @@ $allFiles = array_slice(scandir($dirToRead), 2);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="sidebar.js"></script>
-    <script src="mingipask.js"></script>
     <script src="main.js"></script>
     <script type="text/javascript">
         var sessId = '<?php echo $id; ?>';
@@ -62,18 +61,19 @@ $allFiles = array_slice(scandir($dirToRead), 2);
       <button type ="submit" name = "submit">UPLOAD</button>
 
     </form>
-    <div id="images">
+    <div class="images">
+      <ul id="list">
+        <li class="list-element"></li>
+      </ul>
       <?php
 
       for ($i = 0; $i < count($allFiles); $i ++){
 
         echo '<img src="' .$dirToRead .$allFiles[$i] .'" style="float: left; margin: 0px 15px 15px 0px; border: 3px solid white; ">';
-
       }
 
     ?>
-
-
+  </div>
 
 </body>
 </html>
