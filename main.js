@@ -19,6 +19,8 @@ $(document).ready(function(){
     selectedPic = $(this).parent().find('.active').attr('src');
 
     $('li.list-element').html('<img src="' + selectedPic + '">').hide().fadeIn(2000);
-    $('ul img').css({'width': '80vw', 'height':'80vh'});
+    $('ul img').css({'width': '80vw', 'height':'80vh', 'margin-left':'7.5%'});
+
+
   });
 });
