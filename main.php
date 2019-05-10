@@ -17,8 +17,6 @@ $dirToRead = "img/";
 //$allFiles = scandir($dirToRead);
 $allFiles = array_slice(scandir($dirToRead), 2);
 //var_dump($allFiles);
-
-
 ?>
 
 
@@ -66,12 +64,9 @@ $allFiles = array_slice(scandir($dirToRead), 2);
         <li class="list-element"></li>
       </ul>
       <?php
-
       for ($i = 0; $i < count($allFiles); $i ++){
-
-        echo '<img src="' .$dirToRead .$allFiles[$i] .'" style="float: left; margin: 0px 15px 15px 0px; border: 3px solid white; ">';
+        echo '<img src="' .$dirToRead .$allFiles[$i] .'" style="float: left; margin: 0px 15px 15px 0px; border: 3px solid white; display: flex; height: 200px;  ">';
       }
-
     ?>
   </div>
 
