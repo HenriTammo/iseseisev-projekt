@@ -55,19 +55,9 @@ $allFiles = array_slice(scandir($dirToRead), 2);
 
             <a href="?logout=1">Logi välja</a>
     </div>
-    <script>
-      function RemovePic(){
-        document.getElementById("activeIMG").style.display='none';
-      }
-    </script>
     <div id="img" class="images">
       <ul id="list">
         <li id = "activeIMG" class="list-element" onclick="deactivate()"></li>
-        <script>
-        function deactivate() {
-          document.getElementById("activeIMG").style.display='none';
-        }
-        </script>
       </ul>
       <?php
       for ($i = 0; $i < count($allFiles); $i ++){
