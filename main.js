@@ -1,4 +1,5 @@
 /*jshint esversion:6*/
+
 $(document).ready(function(){
   $('#list').css({'background-color':'#202020', 'border':'2px solid #202020', 'width':'80vw'});
 

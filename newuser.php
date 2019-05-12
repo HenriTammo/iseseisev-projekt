@@ -45,7 +45,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="newuser.css">
 	<title>Konto loomine</title>
 </head>
 <body>
@@ -63,7 +63,7 @@
 			<br>
 			<a style="text-align:left;" href="index.php">Tagasi avalehele</a>
 		</form>
-		<a><?php echo $error; ?></a>
+		<a1><?php echo $error; ?></a1>
 	</div>
 </body>
 </html>

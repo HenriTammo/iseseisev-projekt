@@ -36,6 +36,7 @@ $allFiles = array_slice(scandir($dirToRead), 2);
     <title>Pealeht</title>
 </head>
 <body>
+  <div id="main">
     <div class="title">
         <div id="menuButton"><span style="font-size:60px;cursor:pointer" onclick="toggleNav()">&#9776;</span></div>
         <a>Tere,  <?php echo $_SESSION["userName"]; ?></a>
@@ -45,23 +46,28 @@ $allFiles = array_slice(scandir($dirToRead), 2);
     <br><br><br><br><br>
     <div id="mySidenav" class="sidenav">
         <h1>Menüü</h1>
+            <form action ="upload.php" method ="POST" enctype="multipart/form-data">
+            <input type ="file" name="file" id="uploadButton">
+            <label for="file">Choose a file</label>
+            <button type ="submit" name = "submit">Upload</button>
+
+            </form>
+
             <a href="?logout=1">Logi välja</a>
     </div>
-    <form action ="upload.php" method ="POST" enctype="multipart/form-data">
-    <!--  <label for="uploadButton" class="buttonLabel">Lae pildifail üles</label>
-      <style>
-        .buttonLabel {
-          cursor: pointer;
-          color: white;
-        }
-      </style>-->
-      <input type ="file" name="file" id="uploadButton">
-      <button type ="submit" name = "submit">UPLOAD</button>
-
-    </form>
-    <div class="images">
+    <script>
+      function RemovePic(){
+        document.getElementById("activeIMG").style.display='none';
+      }
+    </script>
+    <div id="img" class="images">
       <ul id="list">
-        <li class="list-element"></li>
+        <li id = "activeIMG" class="list-element" onclick="deactivate()"></li>
+        <script>
+        function deactivate() {
+          document.getElementById("activeIMG").style.display='none';
+        }
+        </script>
       </ul>
       <?php
       for ($i = 0; $i < count($allFiles); $i ++){
@@ -69,6 +75,6 @@ $allFiles = array_slice(scandir($dirToRead), 2);
       }
     ?>
   </div>
-
+</div>
 </body>
 </html>

@@ -4,6 +4,7 @@
     height: 80px;
     background-color: #202020;
     overflow-x: hidden;
+    z-index: 999;
     top: 0;
     left: 0;
     position: fixed;
@@ -13,6 +14,7 @@
     display: inline-block;
     padding-top: 0px;
     padding-left: 15px;
+    z-index: 999;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,7 +24,6 @@
     padding-left: 15px;
     color: white;
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -46,6 +47,63 @@
     transition: 0.3s;
     font-family: Arial, Helvetica, sans-serif;
   }
+  .sidenav form{
+    width: 200px;
+    height: 65px;
+  }
+    .sidenav input[type='file'] {
+   	width: 200px;
+   	height: 39px;
+    border: orange;
+   	opacity: 0;
+   	overflow: hidden;
+   	position: absolute;
+   }
+   .sidenav input[type='file'] + label {
+     background:none!important;
+     color:inherit;
+     border:none;
+     cursor: pointer;
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-family: menu1;
+     font-size: 20px;
+     color: #d4cdcdef;
+     display: block;
+     transition: 0.3s;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .sidenav input[type='file']:focus + label,
+    input[type='file'] + label:hover,
+    input[type='file'] + label.offcanvas {
+     color: #FFA500;
+     background-color: #202020;
+     cursor: pointer;
+     z-index: 1;
+   }
+   .sidenav input[type='file'] + label {
+   	cursor: pointer;
+   }
+  .sidenav button {
+     background:none!important;
+     color:inherit;
+     border:none;
+     cursor: pointer;
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-family: menu1;
+     font-size: 20px;
+     color: #d4cdcdef;
+     display: block;
+     transition: 0.3s;
+     font-family: Arial, Helvetica, sans-serif;
+    }
+    .sidenav button:hover, .offcanvas button:focus{
+      color: #FFA500;
+      background-color: #202020;
+      cursor: pointer;
+    }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -68,7 +126,7 @@
     font-size: 36px;
     margin-left: 50px;
   }
-  #main {
+  .main {
     transition: margin-left .5s;
     padding: 16px;
     color: black;
@@ -83,4 +141,8 @@
     height: 20px;
     background-color: white;
     color: black;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
 }

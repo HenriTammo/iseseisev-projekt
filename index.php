@@ -44,11 +44,12 @@
             <input name="password" type="password" placeholder="Salasõna"><br>
 
             <input name="login" type="submit" value="Logi sisse" href="main.php">
+            <br><br>
+            <a style="text-align:left;" href="newuser.php">Loo kasutaja</a>
+            <br>
 
         </form>
-        <a style="text-align:left;" href="newuser.php">Loo kasutaja</a>
-        <br>
-        <a><?php echo $notice; ?></a>
+        <a1><?php echo $notice; ?></a1>
     </div><br>
 
 </body>
