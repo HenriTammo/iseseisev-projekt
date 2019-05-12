@@ -1,5 +1,11 @@
+Ginsta
+Henri Tammo, Andri Kaljumäe, Kert Liinat
+Rakendus lubab luua kasutajaid millega saab lehele sisse logida. Lehel sees olles saab laadida pilte üles, ning need ilmuvad väikse galleriina, kui vajutada pildi peale siis see muutub suureks, ning selle kõrvale ilmub delete nupp. Kui vajutada suure pildi peale, siis see hajub välja ning jäävad alles ainult väiksed pildid.
+
+
+
 # iseseisev-projekt
-Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
+Eesrakenduste arendamise iseseisva projekti lähteülesanne.
 
 Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
 * 1 liige - max 60 punkti/inimene.
@@ -16,10 +22,10 @@ README.md fail sisaldab:
 1. ekraanitõmmist rakendusest.
 
 Rakenduse puhul peavad olema täidetud vähemalt järgmised nõuded:
-  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga; 
+  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga;
   * rakenduse idee peab olema kooskõlastatud õppejõuga;
   * töötab võrguta olekus;
   * responsive disain;
   * saab kasutada "add to Home screen" funktsionaalsust.
 
-Rakenduses võib kasutada teiste autorite koodi, kuid enda panus peab olema natuke enamat kui võrguta olekus töötamine. 
+Rakenduses võib kasutada teiste autorite koodi, kuid enda panus peab olema natuke enamat kui võrguta olekus töötamine.
