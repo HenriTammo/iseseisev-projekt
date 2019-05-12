@@ -7,7 +7,7 @@ function deactivate() {
 
   $(".delBut").on('tap', deletePic);
   function deletePic(){
-    console.log("kaiperse");
+    console.log("eijuhtu");
   }
 
 $(document).ready(function(){
@@ -27,7 +27,6 @@ $(document).ready(function(){
 
 
 
-
   $('img').click(function(){
     let currentPic = $('img.active');
     $(this).addClass('active');
@@ -40,7 +39,7 @@ $(document).ready(function(){
 
     let activeIMG = document.getElementById('activeIMG');
     let btn = document.createElement("BUTTON");
-    btn.innerHTML = "Kustuta pilt";
+    btn.innerHTML = "🗑️";
 
     document.body.appendChild(btn);
     $("BUTTON").addClass("delBut");
@@ -51,7 +50,8 @@ $(document).ready(function(){
       //console.log(document.getElementsByClassName("active"));
       $(".active").remove();
       deactivate();
-
+      alert("Pilt kustutatud!");
+    //  window.location.href = "main.php";
     });
 
 
