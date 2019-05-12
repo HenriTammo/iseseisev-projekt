@@ -3,11 +3,17 @@
 	echo "<body style='background-color:#202020'>";
 	$email = "";
 	$name = "";
+	$directoryName = 'img';
 	//muutujad võimalike veateadetega
 	$nameError = "";
 	$emailError = "";
 	$passwordError = "";
 	$error = "";
+
+	if(!is_dir($directoryName)){
+    //Directory does not exist, so lets create it.
+    mkdir($directoryName, 0755);
+	}
 	//kui on uue kasutaja loomise nuppu vajutatud
 	if(isset($_POST["submitUserData"])){
 	//var_dump($_POST); //Tähtis array $_POST
@@ -38,7 +44,6 @@
 		$error = "Kasutaja loomisel tekkis viga!";
 	}
 	}//kui on nuppu vajutatud lõppeb ära
-
 ?>
 
 <!DOCTYPE html>
